@@ -1,9 +1,13 @@
 # PPP options for the PPPoE server
 # LIC: GPL
+debug
+logfile /var/log/pppoe-server.log
 require-pap
-login
-lcp-echo-interval 10
-lcp-echo-failure 2
+show-password
+#login
+#lcp-echo-interval 10
+#lcp-echo-failure 2
+lcp-echo-interval 0
+lcp-echo-failure 0
 mru 1492
 mtu 1492
-
